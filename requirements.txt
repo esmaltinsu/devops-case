@@ -1,4 +1,4 @@
 flask
 kafka-python
 pymongo
-
+prometheus_client
