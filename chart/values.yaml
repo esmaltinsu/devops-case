@@ -2,7 +2,7 @@ replicaCount: 1
 
 image:
   repository: ghcr.io/esmaltinsu/devops-case
-  tag: 2a1f762
+  tag: e554e7e
   pullPolicy: Always
 
 # This is for the secrets for pulling an image from a private repository more information can be found here: https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/
