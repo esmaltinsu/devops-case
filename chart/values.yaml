@@ -48,6 +48,7 @@ kafka:
 
 # mongodb chart'ı için ayarlar
 mongodb:
+  enabled: false
   auth:
     enabled: true
     existingSecret: devops-case-secret
