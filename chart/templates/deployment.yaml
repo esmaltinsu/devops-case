@@ -14,6 +14,8 @@ spec:
         app: {{ include "devops-case.name" . }}
         app.kubernetes.io/name: {{ include "devops-case.name" . }}
     spec:
+      imagePullSecrets:
+        {{- toYaml .Values.imagePullSecrets | nindent 8 }}
       initContainers:
         - name: wait-for-kafka
           image: busybox
