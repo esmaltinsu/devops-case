@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Release.Name }}-config
+data:
+  KAFKA_TOPIC: "devops-topic"
+  KAFKA_SERVER: "{{ .Release.Name }}-kafka:9092"
+  MONGO_HOST: "{{ .Release.Name }}-mongodb"
+  MONGO_PORT: "27017"
+  MONGO_DB_NAME: "devops-db"
+  MONGO_COLLECTION: "devops-values"

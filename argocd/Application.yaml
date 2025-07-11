@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: devops-case
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/esmaltinsu/devops-case
+    targetRevision: HEAD
+    path: chart
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: devops-case
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+    - CreateNamespace=true 
