@@ -149,6 +149,7 @@ def receive_value():
 if __name__ == '__main__':
     app.run(debug=True)
 
+# CaseReview Test
 
 # 1) pip install flask kafka-python pymongo
 
