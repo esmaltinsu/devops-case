@@ -4,9 +4,10 @@ metadata:
   name: mongodb
   namespace: devops-case
 spec:
-  type: ClusterIP
+  type: NodePort
   ports:
     - port: 27017
       targetPort: 27017
+      nodePort: 30150
   selector:
     app: mongodb 
