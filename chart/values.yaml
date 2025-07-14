@@ -47,17 +47,17 @@ kafka:
   transactionStateLogMinIsr: 1
 
 # mongodb chart'ı için ayarlar
-mongodb:
-  enabled: false
-  auth:
-    enabled: true
-    existingSecret: devops-case-secret
-    secretKeys:
-      adminPassword: MONGO_PASSWORD
-    rootUser: root
-  service:
-    type: NodePort
-  image:
-    repository: bitnami/mongodb
-    tag: 7.0.8-debian-11-r0
-    pullPolicy: Always
+#mongodb:
+#  enabled: false
+#  auth:
+#    enabled: true
+#    existingSecret: devops-case-secret
+#    secretKeys:
+#      adminPassword: MONGO_PASSWORD
+#    rootUser: root
+#  service:
+#    type: NodePort
+#  image:
+#    repository: bitnami/mongodb
+#    tag: 7.0.8-debian-11-r0
+#    pullPolicy: Always

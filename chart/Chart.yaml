@@ -28,6 +28,6 @@ dependencies:
 - name: kafka
   version: "19.1.5"
   repository: https://charts.bitnami.com/bitnami
-- name: mongodb
-  version: "13.15.1"
-  repository: https://charts.bitnami.com/bitnami
+#- name: mongodb
+#  version: "13.15.1"
+#  repository: https://charts.bitnami.com/bitnami
